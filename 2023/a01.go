@@ -9,8 +9,6 @@ import (
 	"github.com/kloneets/aoc/2023/helpers"
 )
 
-var data []string
-
 func aoc01(env string) (int, int) {
 	log.Println("Day 01:", env, "calculating...")
 	if env == PROD {

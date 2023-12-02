@@ -10,6 +10,8 @@ const (
 	PROD = "prod"
 )
 
+var data []string
+
 func main() {
 	env := DEV
 	if len(os.Args) > 1 && os.Args[1] == PROD {
@@ -17,5 +19,6 @@ func main() {
 	}
 	log.Println("AOC 2023 - ", env)
 	aoc01(env)
+	aoc02(env)
 	log.Println("Done!")
 }
