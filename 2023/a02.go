@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/kloneets/aoc/2023/helpers"
 	"log"
 	"strconv"
 	"strings"
+
+	"github.com/kloneets/aoc/2023/helpers"
 )
 
 func aoc02(env string) (int, int) {
@@ -15,9 +16,6 @@ func aoc02(env string) (int, int) {
 		data = helpers.FileLines("data/02dev")
 	}
 	v1 := solveD02P1()
-	// if env == DEV {
-	// // 	data = helpers.FileLines("data/02dev2")
-	// }
 	return v1, solveD02P2()
 }
 
