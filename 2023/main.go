@@ -21,5 +21,6 @@ func main() {
 	aoc01(env)
 	aoc02(env)
 	aoc03(env)
+	aoc04(env)
 	log.Println("Done!")
 }
