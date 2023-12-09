@@ -1,14 +1,10 @@
 package helpers
 
 import (
-	"log"
 	"strconv"
 )
 
 func StringToNumberString(s string) string {
-	if s == "0" {
-		log.Println("Zerrrrrrrro")
-	}
 	numberMap := make(map[string]string)
 	numberMap["one"] = "1"
 	numberMap["two"] = "2"

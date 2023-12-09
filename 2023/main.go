@@ -20,5 +20,6 @@ func main() {
 	log.Println("AOC 2023 - ", env)
 	aoc01(env)
 	aoc02(env)
+	aoc03(env)
 	log.Println("Done!")
 }
