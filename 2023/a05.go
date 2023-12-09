@@ -143,16 +143,6 @@ func solveD05P1() int {
 	return res
 }
 
-func (a *Almanac) expandSeeds() {
-	var newSeeds []int
-	for i := 0; i < len(a.Seeds); i += 2 {
-		for j := a.Seeds[i]; j <= a.Seeds[i]+a.Seeds[i+1]-1; j++ {
-			newSeeds = append(newSeeds, j)
-		}
-	}
-	a.Seeds = newSeeds
-}
-
 // please never do it this way... I am just lazy. It took about 3 min to calculate
 func (a *Almanac) getMin2() int {
 	res := -1
