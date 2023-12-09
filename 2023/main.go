@@ -18,9 +18,13 @@ func main() {
 		env = PROD
 	}
 	log.Println("AOC 2023 - ", env)
-	aoc01(env)
-	aoc02(env)
-	aoc03(env)
-	aoc04(env)
+	if len(os.Args) > 2 {
+		log.Println("Calculating all days...")
+		aoc01(env)
+		aoc02(env)
+		aoc03(env)
+		aoc04(env)
+	}
+	aoc05(env)
 	log.Println("Done!")
 }
