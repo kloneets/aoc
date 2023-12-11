@@ -25,7 +25,8 @@ func main() {
 		aoc03(env)
 		aoc04(env)
 		aoc05(env)
+		aoc06(env)
 	}
-	aoc06(env)
+	aoc07(env)
 	log.Println("Done!")
 }
